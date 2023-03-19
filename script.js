@@ -38,10 +38,8 @@ function startApp(containerVideo, contentVideoPlayer) {
 const interval = setInterval(() => { 
   const containerVideo = document.querySelector('.video-player--video-wrapper--1L212')
   
-  console.log(containerVideo)
   if(containerVideo) {
     const contentVideoPlayer = containerVideo.parentElement
-    console.log(contentVideoPlayer)
     clearInterval(interval)
     startApp(containerVideo, contentVideoPlayer)
   }
