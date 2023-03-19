@@ -1,0 +1,39 @@
+.bg-full {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 90;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.bg-full .video-player--video-wrapper--1L212 {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.video-player--video-wrapper--1L212 {
+  position: relative;
+}
+.video-player--video-wrapper--1L212:hover .btn-fullscreen {
+  opacity: 1;
+}
+.video-player--video-wrapper--1L212 .btn-fullscreen {
+  position: absolute;
+  background: rgba(219, 6, 6, 0.8);
+  padding: 5px 8px;
+  top: 50px;
+  left: 10px;
+  border-radius: 6px;
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 500ms ease;
+}
+.video-player--video-wrapper--1L212 .btn-fullscreen:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: red;
+}/*# sourceMappingURL=styles.css.map */

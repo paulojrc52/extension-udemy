@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "FSU - Full Screen Udemy",
+  "description": "Extensão que adiciona um botão para expandir a tela de video da Udemy no navegador.",
+  "version": "1.0",
+  "icons": {
+    "16":"/fse-icon.png",
+    "32":"/fse-icon.png",
+    "48":"/fse-icon.png",
+    "128":"/fse-icon.png"  
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["script.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
