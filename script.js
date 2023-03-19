@@ -18,7 +18,11 @@ function startApp(containerVideo, contentVideoPlayer) {
       const videoStream = document.querySelector('.vjs-tech')
       videoStream.style.width = '100%'
       videoStream.style.height = '100%'
-    } 
+    } else {
+        isFullScreen = false
+        contentVideoPlayer.appendChild(containerVideo)
+        bgFull.remove()
+    }
   }
 
   document.addEventListener('keyup', event => {
